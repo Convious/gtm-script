@@ -85,7 +85,6 @@ ___WEB_PERMISSIONS___
 
 ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
-// Enter your template code here.
 const log = require('logToConsole');
 const injectScript = require('injectScript');
 const encodeUriComponent = require('encodeUriComponent');
@@ -94,4 +93,4 @@ injectScript("https://client.convious-app.com/loader.js?k=" + encodeUriComponent
 
 ___NOTES___
 
-Created on 23/09/2019, 11:26:47
+Created on 23/09/2019, 11:35:35
