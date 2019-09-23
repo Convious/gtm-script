@@ -35,24 +35,6 @@ ___WEB_PERMISSIONS___
   {
     "instance": {
       "key": {
-        "publicId": "logging",
-        "versionId": "1"
-      },
-      "param": [
-        {
-          "key": "environments",
-          "value": {
-            "type": 1,
-            "string": "debug"
-          }
-        }
-      ]
-    },
-    "isRequired": true
-  },
-  {
-    "instance": {
-      "key": {
         "publicId": "inject_script",
         "versionId": "1"
       },
@@ -85,7 +67,6 @@ ___WEB_PERMISSIONS___
 
 ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
-const log = require('logToConsole');
 const injectScript = require('injectScript');
 const encodeUriComponent = require('encodeUriComponent');
 injectScript("https://client.convious-app.com/loader.js?k=" + encodeUriComponent(data.account_slug), data.gtmOnSuccess, data.gtmOnFailure);
@@ -93,4 +74,4 @@ injectScript("https://client.convious-app.com/loader.js?k=" + encodeUriComponent
 
 ___NOTES___
 
-Created on 23/09/2019, 11:35:35
+Created on 9/23/2019, 11:40:47 AM
