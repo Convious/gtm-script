@@ -1,7 +1,7 @@
 ﻿___INFO___
 
 {
-  "displayName": "Convious script",
+  "displayName": "Convious Script",
   "description": "",
   "securityGroups": [],
   "id": "cvt_temp_public_id",
@@ -86,14 +86,12 @@ ___WEB_PERMISSIONS___
 ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
 // Enter your template code here.
-var log = require('logToConsole');
-var injectScript = require('injectScript');
-log('data =', data);
-injectScript("https://client.convious-app.com/loader.js?k=" + data.account_slug);
-
-data.gtmOnSuccess();
+const log = require('logToConsole');
+const injectScript = require('injectScript');
+const encodeUriComponent = require('encodeUriComponent');
+injectScript("https://client.convious-app.com/loader.js?k=" + encodeUriComponent(data.account_slug), data.gtmOnSuccess, data.gtmOnFailure);
 
 
 ___NOTES___
 
-Created on 8/16/2019, 10:25:53 AM
+Created on 23/09/2019, 11:26:47
