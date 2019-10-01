@@ -1,5 +1,5 @@
 homepage: "www.convious.com",
 documentation: "https://github.com/Convious/gtm-script/wiki/Documentation",
 versions:
-  - sha: cdaa7e0e66aaa5ce71e46dbce3ebbd5dfb3f2d6d
+  - sha: 3070eba2caa5f8909a1b5b259ec9be24f067409c
     changeNotes: Initial Version
